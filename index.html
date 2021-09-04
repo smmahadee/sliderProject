@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Slider Revolution Cloned By ( MMHK )</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./images/slider-logo.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4 class="mt-4 text-center">Search Image for create slider</h4>
+    <form id="form" class="form-inline mt-3 d-flex justify-content-center">
+      <div class="input-group col-md-6 mb-2">
+        <input type="text" class="form-control" id="search" placeholder="Enter your image type">
+      </div>
+      <button type="submit" id="search-btn" class="btn btn-primary mb-2">Search</button>
+    </form>
+    <section class="images">
+      <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
+        <h4 class="head-title text-center">Select image for create slider</h4>
+        <div class="input-group form-inline d-flex justify-content-center col-md-7 mb-2 mb-md-0">
+          <!-- <input class="form-control" id="doration" placeholder="slider change duration"> -->
+          <div class="input-group col-md-6 mb-2">
+            <input class="form-control rounded pr-3" id="duration" placeholder="slider change duration">
+          </div>
+          <button id="create-slider" class="btn btn-primary px-2 ml-2 mb-2">Create slider</button><br>
+        </div>
+      </div>
+      <div id="wrong-duration" class="text-center text-danger"></div>
+      <h1 id="not-found" class="text-center text-info mt-5"></h1>
+
+      <div class="d-flex justify-content-center">
+        <div id="spinner-loader" class="d-none mb-5 spinner-border text-warning" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+      <div class="row gallery">
+
+      </div>
+    </section>
+    <!-- slider -->
+    <div class="main">
+      <section class="mt-5" id="sliders">
+
+      </section>
+      <div class="dots d-flex mt-2 w-100 justify-content-center align-items-center">
+        <span id="dot_-1" class="dot" onclick="changeItem(-1)"></span>
+        <span id="dot_0" class="dot" onclick="changeItem(0)"></span>
+        <span id="dot_1" class="dot" onclick="changeItem(1)"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="./app.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
